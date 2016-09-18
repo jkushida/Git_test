@@ -26,8 +26,9 @@ class kernelfunction():
         val = self.theta1 * self._kernel(x1,x2) + self.theta3 + self.theta4 * (np.inner(x1,x2))
         return val
 
-kernel1 = kernelfunction(1,4.,0.,0.)#thata1=1,theta2=4 よくあるガウスカーネルになってます。
+#kernel1 = kernelfunction(1,4.,0.,0.)#thata1=1,theta2=4 よくあるガウスカーネルになってます。
 #kernel1 = kernelfunction(1,64.,0.,0.)#thata1=1,theta2=4 よくあるガウスカーネルになってます。
+kernel1 = kernelfunction(1,4.,10.,0.)#thata1=1,theta2=4 よくあるガウスカーネルになってます。
 
 
 #kernel1.norm = "ornstein process"
