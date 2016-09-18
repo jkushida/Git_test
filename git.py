@@ -27,6 +27,9 @@ class kernelfunction():
         return val
 
 kernel1 = kernelfunction(1,4.,0.,0.)#thata1=1,theta2=4 よくあるガウスカーネルになってます。
+#kernel1 = kernelfunction(1,64.,0.,0.)#thata1=1,theta2=4 よくあるガウスカーネルになってます。
+
+
 #kernel1.norm = "ornstein process"
 numofspan = 100 #離散化する数 増やせばなめらかさは増しますが、計算コストも増えます。
 gram_matrix = np.identity(numofspan)
